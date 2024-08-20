@@ -233,10 +233,10 @@
         </div>
         <div class="button-container" id="buttonContainer">
             <div class="top-buttons">
-                <button class="copy-button" onclick="copyToClipboard()">Copiar</button>
-                <button class="download-button" onclick="downloadIptvList()">Baixar</button>
+                <button class="copy-button" onclick="copyToClipboard()">Copy</button>
+                <button class="download-button" onclick="downloadIptvList()">Download </button>
             </div>
-            <button class="generate-button" onclick="generateIptvList()">Gerar Outra Lista</button>
+            <button class="generate-button" onclick="generateIptvList()">Generate another list</button>
         </div>
         <div class="success-message" id="successMessage">
             <p><strong>Your IPTV list has been successfully generated!</strong></p>
@@ -252,7 +252,7 @@
             const dateElement = document.getElementById('currentDate');
             const today = new Date();
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            dateElement.textContent = `Atualizada em ${today.toLocaleDateString('pt-BR', options)}`;
+            dateElement.textContent = `Updated on ${today.toLocaleDateString('pt-BR', options)}`;
         });
 
         async function fetchIptvUrls() {
